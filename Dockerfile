@@ -1,12 +1,14 @@
-FROM mcr.microsoft.com/dotnet/sdk:8.0
+FROM mcr.microsoft.com/dotnet/sdk:6.0
 WORKDIR /app
 
-run dotnet new blazor -n BlazingPizza
-workdir /app/BlazingPizza
-run mkdir PizzaData
+#run dotnet new blazor -n BlazingPizza
+COPY PizzaApp/ .
+#workdir /app/BlazingPizza
 
-COPY Pizza.razor ./Components/Pages/
+COPY Pizza.razor ./Pages/
+COPY Index.razor ./Pages/
 COPY Program.cs .
+COPY Controllers/* Controllers/
 COPY BlazingPizza.csproj .
 COPY PizzaData/* PizzaData/
 
