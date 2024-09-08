@@ -1,7 +1,7 @@
 from mcr.microsoft.com/dotnet/sdk:8.0
 workdir app
-run dotnet new blazor -o BlazingPizzaSite
-workdir BlazingPizzaSite
+run dotnet new blazor -o BlazingPizza
+workdir BlazingPizza
 copy PizzaApp/* .
 run dotnet restore
 run dotnet build
