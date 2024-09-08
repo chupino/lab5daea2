@@ -5,4 +5,4 @@ workdir BlazingPizzaSite
 copy . .
 run dotnet restore
 run dotnet build
-entrypoint dotnet run --urls="https://0.0.0.0:8000"
+entrypoint dotnet run --urls="http://0.0.0.0:8000"
