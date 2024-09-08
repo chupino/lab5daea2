@@ -11,6 +11,8 @@ COPY Program.cs .
 COPY Controllers/* Controllers/
 COPY BlazingPizza.csproj .
 COPY PizzaData/* PizzaData/
+COPY ConfigurePizzaDialog.razor ./Shared/
+COPY Services/* Services/
 
 # Restaura las dependencias y construye el proyecto
 RUN dotnet restore
