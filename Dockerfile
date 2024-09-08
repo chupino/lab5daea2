@@ -7,6 +7,7 @@ run mkdir PizzaData
 
 COPY Pizza.razor ./Components/Pages/
 COPY Program.cs .
+COPY App.razor ./Components/
 COPY PizzaData/* PizzaData/
 
 # Restaura las dependencias y construye el proyecto
