@@ -10,4 +10,4 @@ else
     exit 1
 fi
 
-docker run -d tuto
+docker run -itp 8000:8000 tuto
