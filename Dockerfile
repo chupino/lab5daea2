@@ -5,7 +5,7 @@ run dotnet new blazor -o BlazingPizza
 workdir /app/BlazingPizza
 run mkdir PizzaData
 
-COPY *.razor ./Pages/
+COPY Pizza.razor .Pages
 COPY Program.cs .
 COPY PizzaData/* PizzaData/
 
