@@ -1,7 +1,6 @@
 from mcr.microsoft.com/dotnet/sdk:6.0
 workdir app
-#run dotnet new blazor -o BlazingPizzaSite
-run mkdir BlazingPizzaSite
+run dotnet new blazor -o BlazingPizzaSite
 workdir BlazingPizzaSite
 copy PizzaApp/* .
 run dotnet restore
