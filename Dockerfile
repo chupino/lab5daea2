@@ -1,6 +1,6 @@
 from mcr.microsoft.com/dotnet/sdk:8.0
 workdir app
-run dotnet new blazorserver -o BlazingPizzaSite
+run dotnet new blazor -o BlazingPizzaSite
 workdir BlazingPizzaSite
 copy . .
 run dotnet restore
