@@ -1,5 +1,6 @@
 git clone https://github.com/chupino/lab5daea2.git tuto
 cd tuto
+git clone https://github.com/MicrosoftDocs/mslearn-interact-with-data-blazor-web-apps.git PizzaApp
 
 docker build -t tuto .
 
@@ -10,4 +11,5 @@ else
     exit 1
 fi
 
-docker run -itp 8000:8000 tuto
+docker run -dp 8000:8000 tuto
+docker exec -it $(docker ps -lq) sh
