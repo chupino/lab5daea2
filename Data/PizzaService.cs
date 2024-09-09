@@ -1,6 +1,6 @@
 using System.Threading.Tasks;
 
-namespace BlazingPizza.Data;
+namespace BlazingPizza.Data
 {
     public class PizzaService
     {

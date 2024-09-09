@@ -1,4 +1,4 @@
-namespace BlazingPizza.Data;
+namespace BlazingPizza.Data
 {
     public class PizzaService
     {
