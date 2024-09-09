@@ -3,6 +3,7 @@ WORKDIR /app
 
 run dotnet new blazor -o BlazingPizza
 workdir /app/BlazingPizza
+run mkdir Data
 
 COPY *.razor ./Pages
 COPY Program.cs .
