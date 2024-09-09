@@ -5,7 +5,8 @@ WORKDIR /app
 COPY PizzaApp/ ./
 COPY *.razor ./Pages
 COPY Program.cs .
-COPY Data .
+RUN mkdir Data
+COPY Data/* Data
 
 # Restaura las dependencias y construye el proyecto
 RUN dotnet restore
