@@ -1,8 +1,9 @@
 FROM mcr.microsoft.com/dotnet/sdk:6.0
 WORKDIR /app
 
-# Copia el proyecto completo desde el directorio local 'PizzaApp' al contenedor
-run dotnet new blazorserver
+run dotnet new blazorserver -o BlazingPizza
+workdir /app/BlazingPizza
+
 COPY *.razor ./Pages
 COPY Program.cs .
 COPY Data/* Data
