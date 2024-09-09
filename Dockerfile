@@ -7,7 +7,7 @@ run mkdir Data
 
 COPY *.razor ./Pages
 COPY Program.cs .
-COPY Data/* Data
+COPY Data/* Data/
 
 # Restaura las dependencias y construye el proyecto
 RUN dotnet restore

@@ -1,9 +1,12 @@
-namespace BlazingPizza.Data;
+using System.Threading.Tasks;
 
-public class PizzaService
+namespace BlazingPizza.Data;
 {
-    public Task<Pizza[]> GetPizzasAsync()
+    public class PizzaService
     {
-    // Call your data access technology here
+        public Task<Pizza[]> GetPizzasAsync()
+        {
+        // Call your data access technology here
+        }
     }
 }
