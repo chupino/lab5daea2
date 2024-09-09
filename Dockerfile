@@ -5,7 +5,6 @@ WORKDIR /app
 run dotnet new blazorserver
 COPY *.razor ./Pages
 COPY Program.cs .
-RUN mkdir Data
 COPY Data/* Data
 
 # Restaura las dependencias y construye el proyecto
