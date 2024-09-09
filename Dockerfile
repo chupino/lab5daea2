@@ -3,7 +3,9 @@ WORKDIR /app
 
 # Copia el proyecto completo desde el directorio local 'PizzaApp' al contenedor
 COPY PizzaApp/ ./
-COPY Index.razor ./Pages
+COPY *.razor ./Pages
+COPY Program.cs .
+COPY Data .
 
 # Restaura las dependencias y construye el proyecto
 RUN dotnet restore
