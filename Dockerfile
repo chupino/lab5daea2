@@ -3,11 +3,11 @@ WORKDIR /app
 
 run dotnet new blazor -o BlazingPizza
 workdir /app/BlazingPizza
-run mkdir Data
+run mkdir PizzaData
 
 COPY *.razor ./Pages
 COPY Program.cs .
-COPY Data/* Data/
+COPY PizzaData/* PizzaData/
 
 # Restaura las dependencias y construye el proyecto
 RUN dotnet restore
