@@ -1,7 +1,7 @@
 FROM mcr.microsoft.com/dotnet/sdk:6.0
 WORKDIR /app
 
-run dotnet new blazor -o BlazingPizza
+run dotnet new blazorserver -o BlazingPizza
 workdir /app/BlazingPizza
 run mkdir PizzaData
 
